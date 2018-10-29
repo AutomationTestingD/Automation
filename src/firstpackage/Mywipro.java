@@ -71,7 +71,7 @@ System.out.println(a.get(i));
 		        		driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[16]/div/div[2]/div/div/div[1]/div/div[3]/button")).click();
 		        		System.out.println("You cannot update the efforts for the current date");    
 		        	    }        		
-		        	catch(Exception e1) 
+		        	catch(Exception e1)
 		        		{
 		            	System.out.println("No Efforts field is available");
 		            	}
