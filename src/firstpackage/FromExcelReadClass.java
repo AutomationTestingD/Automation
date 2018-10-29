@@ -9,7 +9,7 @@ public class FromExcelReadClass {
 		String file = "C:\\Users\\Sandy\\eclipse-workspace\\firstproject\\src\\firstpackage\\test.xlsx";
 		//String output = excel.ExcelReadMethod(file);
 		System.out.println(excel.ExcelReadMethod(file));
-		String sss = sheet.getRow(0).getCell(0).getStringCellValue()
+		//String sss = sheet.getRow(0).getCell(0).getStringCellValue()
 		
 }
 	}

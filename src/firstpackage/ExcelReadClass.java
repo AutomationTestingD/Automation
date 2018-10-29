@@ -18,5 +18,5 @@ public class ExcelReadClass {
         XSSFSheet sheet = workbook.getSheetAt(0);
 
 	return (sheet.getRow(0).getCell(0).getStringCellValue());
-}
+}}
 	
