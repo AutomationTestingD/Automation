@@ -1,0 +1,19 @@
+GitHub:
+
+dileepkumar.samudrala@gmail.com
+DileepDileep@250
+
+
+Server: https://github.com/Dileep250/Automation.git
+
+git init
+git status
+git remote add origin 'https://github.com/Dileep250/Automation.git'
+git add *
+git commit -m "committed on 29th October"
+git push origin master
+
+
+git clone "C:\Users\Sandy\eclipse-workspace\firstproject"
+git pull
+
