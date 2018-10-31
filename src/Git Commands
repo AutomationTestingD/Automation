@@ -1,3 +1,13 @@
+In Real Time flow of project:
+
+Devloper  -> Git -> Jenkins  -> Maven - Tomcat server (.war file)
+
+Developer develop the code, commit changes and push to Git.
+In Jenkins using Maven compile, test and package will be done Automatically.
+Tomcat server with local host will give the output as soon as you refesh the URL:ip address
+
+
+
 GitHub:
 
 
