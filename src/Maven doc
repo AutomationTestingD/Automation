@@ -1,18 +1,22 @@
 
-Apache Maven: 
-
-https://maven.apache.org/index.html
+Apache Maven: https://maven.apache.org/index.html
 
 
 Maven:
+Apache Maven is a software project management and comprehension tool. 
+Based on the concept of a project object model (POM), Maven can manage a project's build, 
+reporting and documentation from a central piece of information. 
 
-What is Maven?
-Maven is Build automation tool
 
-pom.xml : Heart of Maven
+pom.xml :THis is a xml file and residence in root folder which contains usually below
 
 <Prject info>
-<>
+<plug ins>
+<properties>
+<dependencies>
+<build>
+
+Also contains below
 
 1.Project
 2.GroupId - com.wipro
@@ -131,3 +135,48 @@ Finally add compile, surefire and Resources plugins to pom.xml file. (<build> ..
 
 
 Symilar build automation tools: ANT/Gradle
+
+
+
+Possible errors:
+
+Issue1: comple error
+
+[ERROR] Source option 5 is no longer supported. Use 6 or later.
+[ERROR] Target option 1.5 is no longer supported. Use 1.6 or later.
+
+Sol: add below property in pom.xml file
+
+ <properties>
+    <maven.compiler.source>6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
+ 
+
+
+
+Issue2: error while running .jar file
+
+Error: no main manifest attribute, in filename.jar
+
+Sol: add below property in pom.xml file and run "mvn clean install" command and try running .jar file again by redercting to target folder
+
+<build>
+	<plugins>
+		<plugin>
+			<!-- Build an executable JAR -->
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<version>2.4</version>
+			<configuration>
+				<archive>
+					<manifest>
+						<mainClass>com.mycompany.app.App</mainClass>
+					</manifest>
+				</archive>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+
+
