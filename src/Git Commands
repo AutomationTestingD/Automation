@@ -6,58 +6,24 @@ Developer develop the code, commit changes and push to Git.
 In Jenkins using Maven compile, test and package will be done Automatically.
 Tomcat server with local host will give the output as soon as you refesh the URL:ip address
 
-
-
 GitHub:
-
-
-
 dileepkumar.samudrala@gmail.com
-
 DileepDileep@250
-
-
-
-
 
 Server: https://github.com/Dileep250/Automation.git
 
-
-
-
-
 Base commands:
 
-
-
 git init
-
 git status
-
 git remote add origin 'https://github.com/Dileep250/Automation.git'
-
-
-
-
 
 Check in commands:
 
-
-
 git add *
-
 git commit -m "committed on 29th October"
-
 git push origin master
 
-
-
-
-
 Check out commands:
-
-
-
 git clone "C:\Users\Sandy\eclipse-workspace\firstproject"
-
 git pull
